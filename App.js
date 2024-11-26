@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Alert,ActivityIndicator,StatusBar,Modal,View,Text, Image, ImageBackground, ScrollView, Button, Pressable } from "react-native";
+import Greet from "./components/Greet";
 
 const logoImg = require("./assets/adaptive-icon.png")
 
@@ -40,7 +41,7 @@ export default function App(){
       barStyle="light-content"    
     /> */}
     {/* <ActivityIndicator size="large" color="midnightblue" animating={true} /> */}
-    <Button title="Alert" onPress={() => Alert.alert("Invalid data")} />
+    {/* <Button title="Alert" onPress={() => Alert.alert("Invalid data")} />
     <Button title="Alert2" onPress={() => Alert.alert("Invalid data", "DOB Incorrect")} />
     <Button title="Alert3" onPress={() => Alert.alert("Invalid data", "Date of birth incorrect", [
       {
@@ -51,7 +52,11 @@ export default function App(){
         text: 'OK',
         onPress: () => console.log("OK pressed")
       }
-    ])} />
+    ])} /> */}
+    
+    {/* Custom compoenents */}
+    <Greet name="Bruce wayne" />
+    <Greet name="Clark Kent" />
   </View>
   )
 }
