@@ -28,9 +28,15 @@ const styles = StyleSheet.create({
     padding:60
   },
   box:{
-    width:100,
-    height:100,
-    padding:10
+    width:"25%",
+    height:"25%",
+    // padding:10
+    paddingHorizontal:10,
+    paddingVertical:10,
+    marginHorizontal:10,
+    marginVertical:10,
+    borderWidth:5,
+    borderColor:"red"
   },
   lightblueBox:{
     backgroundColor:"lightblue"
